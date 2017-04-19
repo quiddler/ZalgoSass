@@ -1,0 +1,22 @@
+{
+  "name": "zalgo-sass",
+  "version": "1.0.0",
+  "description": "visual architecture for ZalgoUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quiddler/ZalgoSass.git"
+  },
+  "author": "Eliot Easterling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quiddler/ZalgoSass/issues"
+  },
+  "homepage": "https://github.com/quiddler/ZalgoSass#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
