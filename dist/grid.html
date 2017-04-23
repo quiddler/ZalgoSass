@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZALGO Grid</title>
+	<link rel="stylesheet" type="text/css" href="./zalgo-style.css">
+	<link rel="stylesheet" type="text/css" href="./lib/normalize.css">
+	<style type="text/css">
+		.zgo-col-1 {
+			background-color: pink;
+		}
+		.zgo-col-2 {
+			background-color: red;
+		}
+		.zgo-col-3 {
+			background-color: orange;
+		}
+		.zgo-col-4 {
+			background-color: yellow;
+		}
+		.zgo-col-5 {
+			background-color: lime;
+		}
+		.zgo-col-6 {
+			background-color: green;
+		}
+		.zgo-col-7 {
+			background-color: cyan;
+		}
+		.zgo-col-8 {
+			background-color: blue;
+		}
+		.zgo-col-9 {
+			background-color: darkblue;
+		}
+		.zgo-col-10 {
+			background-color: magenta;
+		}
+		.zgo-col-11 {
+			background-color: indigo;
+		}
+		.zgo-col-12 {
+			background-color: purple;
+		}
+
+		/*-- outline to accentuate grid elements --*/
+		.outline, .outline * {
+	        outline: 2px solid white; 
+	    }
+
+	    /*-- extra column content styling --*/
+	    [class*='col-'] > p {
+			margin: 1em;
+			text-align: center; 
+			color: white;
+			display: table-cell;
+			vertical-align: middle;
+			background-color: black;
+			position: relative;
+			height: 100%;
+			overflow: hidden;
+	    }
+
+	    /*-- extra row content styling --*/
+	    .zgo-row div {
+	    	height: 150px;
+	    	display: table;
+	    }
+	</style>
+</head>
+<body>
+	<div class="zgo-grid-container outline">
+        <div class="zgo-row">
+            <div class="zgo-col-1"><p>col-1 1</p></div> 
+            <div class="zgo-col-1"><p>col-1 2</p></div> 
+            <div class="zgo-col-1"><p>col-1 3</p></div> 
+            <div class="zgo-col-1"><p>col-1 4</p></div> 
+            <div class="zgo-col-1"><p>col-1 5</p></div> 
+            <div class="zgo-col-1"><p>col-1 6</p></div>
+            <div class="zgo-col-1"><p>col-1 7</p></div> 
+            <div class="zgo-col-1"><p>col-1 8</p></div> 
+            <div class="zgo-col-1"><p>col-1 9</p></div> 
+            <div class="zgo-col-1"><p>col-1 10</p></div> 
+            <div class="zgo-col-1"><p>col-1 11</p></div> 
+            <div class="zgo-col-1"><p>col-1 12</p></div>
+        </div> 
+        <div class="zgo-row">
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div>
+        </div> 
+        <div class="zgo-row">
+            <div class="zgo-col-3"><p>col-3</p></div> 
+            <div class="zgo-col-3"><p>col-3</p></div>
+            <div class="zgo-col-3"><p>col-3</p></div> 
+            <div class="zgo-col-3"><p>col-3</p></div> 
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-4"><p>col-4</p></div> 
+            <div class="zgo-col-4"><p>col-4</p></div>
+            <div class="zgo-col-4"><p>col-4</p></div> 
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-2"><p>col-2</p></div> 
+            <div class="zgo-col-5"><p>col-5</p></div>
+            <div class="zgo-col-5"><p>col-5</p></div> 
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-6"><p>col-6</p></div> 
+            <div class="zgo-col-6"><p>col-6</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-7"><p>col-7</p></div> 
+            <div class="zgo-col-5"><p>col-5</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-7"><p>col-7</p></div> 
+            <div class="zgo-col-4"><p>col-4</p></div>
+            <div class="zgo-col-1"><p>col-1</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-7"><p>col-7</p></div> 
+            <div class="zgo-col-3"><p>col-3</p></div>
+            <div class="zgo-col-2"><p>col-2</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-8"><p>col-8</p></div> 
+            <div class="zgo-col-4"><p>col-4</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-8"><p>col-8</p></div> 
+            <div class="zgo-col-3"><p>col-3</p></div>
+            <div class="zgo-col-1"><p>col-1</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-8"><p>col-8</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div>
+            <div class="zgo-col-2"><p>col-2</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-9"><p>col-9</p></div> 
+            <div class="zgo-col-3"><p>col-3</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-9"><p>col-9</p></div>
+            <div class="zgo-col-2"><p>col-2</p></div>
+            <div class="zgo-col-1"><p>col-1</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-10"><p>col-10</p></div> 
+            <div class="zgo-col-2"><p>col-2</p></div>
+        </div>        
+        <div class="zgo-row">
+            <div class="zgo-col-10"><p>col-10</p></div> 
+            <div class="zgo-col-1"><p>col-1</p></div>
+            <div class="zgo-col-1"><p>col-1</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-11"><p>col-11</p></div> 
+            <div class="zgo-col-1"><p>col-1</p></div>
+        </div>
+        <div class="zgo-row">
+            <div class="zgo-col-12"><p>col-12</p></div>
+        </div>
+    </div> <!-- end zgo-grid-container -->
+</body>
+</html>
