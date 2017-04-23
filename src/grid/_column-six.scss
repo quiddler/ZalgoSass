@@ -1,0 +1,22 @@
+.zgo-col-6 { 
+    /* tablet */
+    @media only screen and (min-width : 600px) {
+        width   : $full * (12 / $col-num);
+        padding : $gutter-size-tablet;
+    }
+    /* small screen */
+    @media only screen and (min-width : 768px) {
+        width   : $full * (6 / $col-num);
+        padding : $gutter-size-laptop;
+    }
+    /* medium screen */
+    @media only screen and (min-width : 1024px) {
+        width   : $full * (6 / $col-num);
+        padding : $gutter-size-desktop;
+    }
+    /* large screen */
+    @media only screen and (min-width : 1280px) {
+        width   : $full * (6 / $col-num);
+        padding : $gutter-size-tv;
+    }
+}
