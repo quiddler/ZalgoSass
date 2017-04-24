@@ -18,8 +18,8 @@ $sixth   : 16.66%;
 $eighth  : 12.49%;
 $tenth   :  9.99%;
 
-$gutter-size-phone   : 0.4em;
-$gutter-size-tablet  : 0.5em;
+$gutter-size-phone   : 0.2em;
+$gutter-size-tablet  : 0.4em;
 $gutter-size-laptop  : 0.6em;
 $gutter-size-desktop : 0.8em;
 $gutter-size-tv      : 1.0em;
@@ -62,14 +62,14 @@ $gutter-size-tv      : 1.0em;
 }
 
 // COLUMN WIDTHS - static sizing
-.zgo-col-full   { width: $full;   }
-.zgo-col-half   { width: $half;   }
-.zgo-col-third  { width: $third;  }
-.zgo-col-fourth { width: $fourth; }
-.zgo-col-fifth  { width: $fifth;  }
-.zgo-col-sixth  { width: $sixth;  }
-.zgo-col-eighth { width: $eighth; }
-.zgo-col-tenth  { width: $tenth;  }
+.zgo-full   { width: $full;   }
+.zgo-half   { width: $half;   }
+.zgo-third  { width: $third;  }
+.zgo-fourth { width: $fourth; }
+.zgo-fifth  { width: $fifth;  }
+.zgo-sixth  { width: $sixth;  }
+.zgo-eighth { width: $eighth; }
+.zgo-tenth  { width: $tenth;  }
 
 // COLUMN WIDTHS - responsive
 @import "column-one";

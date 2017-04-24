@@ -1,37 +1,26 @@
 .zgo-col-1 {
 	/* tablet */
     @media only screen and (min-width : 600px) {
+        column-count: 12;
     	width   : $full * (1 / $col-num);
         padding : $gutter-size-tablet;
-        + .zgo-col-1 ~ .zgo-col-1 {
-            width : $full * (3 / $col-num);
-        }
-        &:first-of-type {
-            &:nth-last-child(12) {
-                width : $full * (3 / $col-num);
+        @for $i from 0 through $col-num - 1 {
+            &:nth-of-type( #{$i + 1} ) {
+                &:nth-last-of-type(#{$col-num - $i}) {
+                    width : $full * (3 / $col-num);
+                }
             }
         }
-        &:nth-of-type(2) {
-            &:nth-last-child(11) {
-                width : $full * (3 / $col-num);
-            }
-        } 
     }
     /* small screen */
     @media only screen and (min-width : 768px) {
     	width   : $full * (1 / $col-num);
         padding : $gutter-size-laptop;
-        + .zgo-col-1 ~ .zgo-col-1 {
-            width : $full * (2 / $col-num);
-        }
-        &:first-of-type {
-            &:nth-last-child(12) {
-                width : $full * (2 / $col-num);
-            }
-        }
-        &:nth-of-type(2) {
-            &:nth-last-child(11) {
-                width : $full * (2 / $col-num);
+        @for $i from 0 through $col-num - 1 {
+            &:nth-of-type( #{$i + 1} ) {
+                &:nth-last-of-type(#{$col-num - $i}) {
+                    width : $full * (2 / $col-num);
+                }
             }
         }
     }
@@ -39,17 +28,11 @@
     @media only screen and (min-width : 1024px) {
         width   : $full * (1 / $col-num);
         padding : $gutter-size-desktop;
-        + .zgo-col-1 ~ .zgo-col-1 {
-            width : $full * (1 / $col-num);
-        }
-        &:first-of-type {
-            &:nth-last-child(12) {
-                width : $full * (1 / $col-num);
-            }
-        }
-        &:nth-of-type(2) {
-            &:nth-last-child(11) {
-                width : $full * (1 / $col-num);
+        @for $i from 0 through $col-num - 1 {
+            &:nth-of-type( #{$i + 1} ) {
+                &:nth-last-of-type(#{$col-num - $i}) {
+                    width : $full * (1 / $col-num);
+                }
             }
         }
     }

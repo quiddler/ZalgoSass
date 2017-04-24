@@ -1,6 +1,7 @@
 .zgo-col-4 {
     /* tablet */
     @media only screen and (min-width : 600px) {
+        column-count: 3;
         width   : $full * (4 / $col-num);
         padding : $gutter-size-tablet;
         + .zgo-col-4 {
