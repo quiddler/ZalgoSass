@@ -2,11 +2,11 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-var cleaner = require('gulp-css-clean');
+var cleaner = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 // ... pathing variables
-var input  = '.src/**/*.scss';
+var input  = './src/**/*.scss';
 var output = './dist';
 
 // ... option variables
@@ -17,7 +17,7 @@ var sassOptions = {
 var autoprefixerOptions = {
     browsers: [
 	  	'last 2 versions', 
-	  	'> 5%', 
+	  	'> 1%', 
 	  	'Firefox ESR'
     ]
 };

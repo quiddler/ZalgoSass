@@ -1,0 +1,83 @@
+/* **************************************************************************************
+ *                                                                                      *
+ *  				   --- The Ubiquitous ZalgoSass Grid System ---                     *
+ *                                                                                      *
+ * ************************************************************************************ */
+
+
+/* ******************************* ZALGO Grid Variables ******************************* */
+$col-num   : 12;
+$max-width : 1980px;
+
+$full    : 99.99%;
+$half    : 49.99%;
+$third   : 33.33%;
+$fourth  : 24.99%;
+$fifth   : 19.99%;
+$sixth   : 16.66%;
+$eighth  : 12.49%;
+$tenth   :  9.99%;
+
+$gutter-size-phone   : 0.2em;
+$gutter-size-tablet  : 0.4em;
+$gutter-size-laptop  : 0.6em;
+$gutter-size-desktop : 0.8em;
+$gutter-size-tv      : 1.0em;
+
+
+/* ******************************* ZALGO Grid Container ******************************* */
+.zgo-grid-container {
+    width     : $full;
+    max-width : $max-width; 
+}
+.zgo-grid-container * {
+	transition : height, width .4s ease-in-out;
+    box-sizing : border-box; 
+}
+
+
+/* ********************************** ZALGO Grid Rows ********************************* */
+.zgo-row:before, 
+.zgo-row:after {        // use clearfix hack
+    content : " ";
+    display : table;
+    clear   : both;
+}
+.zgo-row {
+	overflow : hidden;
+}
+
+
+/* ******************************** ZALGO Grid Columns ******************************** */
+
+// COLUMN POSITIONING
+[class*='zgo-col-'] {
+	width      : $full;     /* phone : row == column */
+    min-height : 1px;
+    float      : left;
+    clear      : none;
+    padding    : $gutter-size-phone;
+    margin     : 0;
+    wrap       : none;
+}
+
+// COLUMN WIDTHS - static sizing
+.zgo-full   { width: $full;   }
+.zgo-half   { width: $half;   }
+.zgo-third  { width: $third;  }
+.zgo-fourth { width: $fourth; }
+.zgo-fifth  { width: $fifth;  }
+.zgo-sixth  { width: $sixth;  }
+.zgo-eighth { width: $eighth; }
+.zgo-tenth  { width: $tenth;  }
+
+// COLUMN WIDTHS - responsive
+@import "column-one";
+@import "column-two";
+@import "column-three";
+@import "column-four";
+@import "column-five";
+@import "column-six";
+@import "columns-seven-through-twelve";
+
+/* **************************************** EOF *************************************** */

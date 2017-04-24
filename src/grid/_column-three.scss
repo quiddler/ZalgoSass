@@ -1,0 +1,48 @@
+.zgo-col-3 {
+    /* tablet */
+    @media only screen and (min-width : 600px) {
+        width   : $full * (3 / $col-num);
+        padding : $gutter-size-tablet;
+        + .zgo-col-3 + .zgo-col-3 {
+            width : $full * (6 / $col-num);
+        }
+        &:first-of-type {
+            &:nth-last-child(4) {
+                width : $full * (6 / $col-num);
+            }
+        }
+        &:nth-of-type(2) {
+            &:nth-last-child(3) {
+                width : $full * (6 / $col-num);
+            }
+        }
+    }
+    /* small screen */
+    @media only screen and (min-width : 768px) {
+        width   : $full * (3 / $col-num);
+        padding : $gutter-size-laptop;
+        + .zgo-col-3 + .zgo-col-3 {
+            width : $full * (3 / $col-num);
+        }
+        &:first-of-type {
+            &:nth-last-child(4) {
+                width : $full * (3 / $col-num);
+            }
+        }
+        &:nth-of-type(2) {
+            &:nth-last-child(3) {
+                width : $full * (3 / $col-num);
+            }
+        }
+    }
+    /* medium screen */
+    @media only screen and (min-width : 1024px) {
+        width   : $full * (3 / $col-num);
+        padding : $gutter-size-desktop;
+    }
+    /* large screen */
+    @media only screen and (min-width : 1280px) {
+        width   : $full * (3 / $col-num);
+        padding : $gutter-size-tv;
+    }
+}
