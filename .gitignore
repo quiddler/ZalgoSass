@@ -3,5 +3,8 @@
 
 node_modules/**/*
 node_modules/node-sass/bin/node-sass
+node_modules/.bin/node-sass
 
 node_modules/.bin/node-sass
+
+node_modules/node-sass/bin/node-sass
